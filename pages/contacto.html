@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+		#container header .btn-menu{
+			font-family: 'Work Sans' sans-serif;
+			color: white;
+		}
+		</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../DESAFÍO 1/img/favicon-32x32.png">
+    <link rel="stylesheet" href="/styles/style-contacto.css">
+	<title>Whoosh - Trip & Adventure</title>
+</head>
+<body>
+	<div id="bg"></div>
+		<header class="header">
+			<img src="../img/WHOOSH - Logo PNG.png" alt="Logo" height="40px" width="115px" id="Logo-Header">
+			<img src="../img/WHOOSH - Logo IND.png" alt="Logo" height="30px" width="20px" id="Logo-Header-Mobile">
+					<input type="checkbox" id="btn-menu">
+					<div class="container">
+						<div class="btn-menu">
+							<label for="btn-menu">&#9776</label>
+						</div>
+							<nav class="menu">
+							</nav>
+						</div>
+				
+			
+						<nav class="cont-menu">
+							<ul>
+								<li><a href="../index.html">INICIO</a></li>
+								<li><a href="nosotros.html">NOSOTROS</a></li>
+								<li><a href="calendario.html">CALENDARIO</a></li>
+								<li><a href="reservas.html">RESERVAS</a></li>
+								<li><a href="contacto.html">CONTACTO</a></li>
+							</ul>
+						</nav>
+						<label class="cross" for="btn-menu">&times;</label>
+				
+				<div id="ellipsis">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+		</header>
+
+    
+    
+    <form id="form-contact-id" class="form-contact-class" method="post" action="#">
+        <fieldset class="fieldset-contact">
+               
+            <div class="contact-group">
+                
+
+                <div class="contact-input-group">
+					<input name="name" type="text" class="form-input-control" id="contact-data" placeholder="Nombre" required>
+                    
+                </div>
+            </div>
+
+            <div class="contact-group">
+                <div class="contact-input-group">
+                    <input name="email" type="text" class="form-input-control" id="contact-data" placeholder="Email" required/>
+                </div>
+            </div>
+
+            <div class="contact-group">
+                <div class="contact-input-group">
+                    <textarea name="text" class="form-input-control" placeholder="Escriba su mensaje..." required></textarea>
+                </div>
+            </div>
+
+            <div class="contact-group">
+                <button type="submit" id="submit-button" class="submit-btn">Enviar</button>
+            </div>
+    
+        </fieldset>
+
+    </form>
+    
+    <br>
+    <br>
+    <br>
+	<footer class="container-foot">
+
+		<div class="caja1">
+			<div class="box">
+				<ul class="list">
+					<li><a href="#"><img src="../img/icon-fb.png" alt="fb"></a></li>
+					<li><a href="#"><img src="../img/icon-twt.png" alt="twt"></a></li>
+					<li><a href="#"><img src="../img/icon-ig.png" alt="ig"></a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="caja2">
+			<div class="box">
+				<form action="newsletter" class="newsletter">
+					<legend>Suscribite a nuestro Newsletter</legend>
+	
+					<input type="email" id="news-email" placeholder="Ingrese su email" required>
+					<button type="submit" id="submit-button-news" class="submit-btn-news">Enviar</button>
+				</form>
+			</div>		
+		</div>
+		
+	</footer>
+</body>
+
+</html>
+

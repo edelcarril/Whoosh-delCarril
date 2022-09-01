@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
+*:focus{
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* Header */
+
+header{
+    background-color: #B3DAF6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 80px;
+}
+
+/* Body */
+
+body {
+    background-image: url(../img/web1920bg.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 100px;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.header ul{
+    margin-bottom: 32px;
+    margin-left: 28px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+
+}
+
+.header li{
+    margin-bottom: 16px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    
+    
+}
+
+.header a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header a:hover{
+    color: rgb(42, 141, 255);
+}
+
+.header #Logo-Header{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+
+
+/* Section */
+
+
+
+table{
+	background: rgb(255, 255, 255);
+	position: fixed;
+	top: 15%;
+	left: 13%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    
+}
+
+table,th,tr {
+	text-align: center;
+	vertical-align: middle;
+}
+
+table thead th{
+	
+	width: 3em;
+	height: 2em;
+	font-weight: 900;
+  font-family: montserrat, sans-serif;
+  font-size: medium;
+}
+
+table tbody td{
+	
+	height: 2.9em;
+    
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+td{
+    font-size: 14px;
+    padding: 7.71px;
+    margin: 20px;
+    
+}
+
+tbody a{
+	display: block;
+	height: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+  
+}
+
+
+#mes-prin:hover{
+	background: rgb(70, 70, 70);
+	color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.null{
+	color: gray;
+    font-family: montserrat, sans-serif;
+}
+
+.selected{
+	background: rgb(70, 70, 70);
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+.text{
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+.calendar-tittle{
+    padding: 10px;
+    color: rgb(70, 70, 70);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.event-1:hover{
+    background: rgb(99, 190, 103) !important;
+}
+
+.event-2:hover{
+    background: rgb(219, 96, 96) !important;
+}
+
+.event-3:hover{
+    background: rgb(230, 174, 91) !important;
+}
+
+
+.references{
+    background: rgb(255, 255, 255);
+	position: fixed;
+	top: 15%;
+	left: 44%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    
+}
+
+.references-text{
+    font-family: montserrat, sans-serif;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.charla{
+    position: fixed;
+    top: 22%;
+    left: 49.5%;
+}
+
+.capacitacion{
+    position: fixed;
+    top: 29%;
+    left: 49.5%;
+    
+}
+
+.cotizacion{
+    position: fixed;
+    top: 36%;
+    left: 49.5%;
+}
+
+.ref-forma1{
+    background: rgb(99, 190, 103);
+    border-radius: 50%;
+    position: fixed;
+    top: 21.8%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.ref-forma2{
+    background: rgb(219, 96, 96);
+    border-radius: 50%;
+    position: fixed;
+    top: 28.7%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.ref-forma3{
+    background: rgb(230, 174, 91);
+    border-radius: 50%;
+    position: fixed;
+    top: 35.7%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.prox-event{
+    background: rgb(255, 255, 255);
+	position: fixed;
+	top: 48.8%;
+	left: 44%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 190px;
+    width: 250px;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    
+}
+
+.first-event{
+    position: fixed;
+    top: 55%;
+    left: 46.5%;
+    font-size: 11pt;
+    font-family: montserrat, sans-serif;
+}
+
+.first-event p{
+    font-size: 10pt !important;
+    margin-top: 2px;
+}
+
+.second-event{
+    position: fixed;
+    top: 65%;
+    left: 46.5%;
+    font-size: 11pt;
+    font-family: montserrat, sans-serif;
+}
+
+.second-event p{
+    font-size: 10pt !important;
+    margin-top: 2px;
+}
+
+/* Footer */
+footer{
+    color: #fff;
+    padding: 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 60px;
+}
+
+.container-foot img {
+    height: 20px;
+    margin-bottom: -15px;
+}
+
+.container-foot ul{
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline;
+    flex-direction: column;
+    align-items: left;
+    float: left;
+}
+
+.container-foot li{
+    padding: 0 15px;
+    margin-bottom: 16px;
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.container-foot a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.caja2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 70px;
+}
+
+legend{
+    padding-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #e6e6e6;
+	color: #e6e6e6;
+	font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	
+}
+
+::-webkit-input-placeholder{
+    color:#ffffff;
+    }
+    :-moz-placeholder{ /* Firefox 18- */
+    color:#ffffff;
+    }
+    ::-moz-placeholder{ /* Firefox 19+ */
+    color:#ffffff;
+    }
+    :-ms-input-placeholder{
+    color:#ffffff;
+    }
+
+#submit-button-news {
+    display: none;
+  }

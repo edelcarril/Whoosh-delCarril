@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d1d;
+
+}
+
+section{
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+    grid-gap: 25px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.landing-title{    
+    font-family: montserrat, sans-serif;
+    background-image: var(--gradient);
+    background-image: linear-gradient(to bottom, #363636 0%, white 50%, #363636 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 15pt;
+    text-align: center;
+    
+}
+
+
+
+
+
+.landing-logo{
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: center;
+    animation-name: landing-logo;
+}
+
+
+
+.landing-title{
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.ball-cover{
+    height: 18px;
+    width: 18px;
+    position: fixed;
+    top: 0%;
+    left: 49.4%;
+    z-index: 999;
+    background-color: #1d1d1d;
+}
+
+
+
+/* ANIMACIÓN */
+
+
+
+.ball{
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    position: fixed;
+    top: 0%;
+    left: 49.4%;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+
+
+    
+
+    @keyframes ball {
+    
+        0% {
+            opacity: 0%;
+            scale: 10%;
+            left: 49.4%;
+            top: 0%;
+            color: white;
+        }
+
+    
+        95% {
+            opacity: 100%;
+            color: white;
+        }
+
+        100% {
+            top: 58%;
+            left: 49.4%;
+            opacity: 0%;
+            color: white;
+        }
+
+    
+}
+
+.loader{
+    background-color: transparent;
+    height: 25px;
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-content: center;     
+    z-index: 99;
+    background-color: #1d1d1d;
+    border-radius: 500px;
+    border: solid 0px white;
+    animation-name: loader;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+.loader .loader-color {
+    background-color: white;
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+    height: 73%;
+    border-radius: 500px;
+    z-index: 999 !important;
+    animation-name: loader-anim;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+}
+
+@keyframes loader-anim {
+    0%{
+        width: 0%;
+        opacity: 50%;
+    }
+
+    25%{
+        width: 25%;
+        opacity: 75%;
+    }
+
+    50%{
+        width: 50%;
+        opacity: 75%;
+    }
+
+    75%{
+        width: 75%;
+        opacity: 100%;
+    }
+
+    80%{
+        width: 85%;
+        opacity: 100%;
+    }
+    100%{
+        width: 100%;
+        opacity: 0%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
