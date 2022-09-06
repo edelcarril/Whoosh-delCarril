@@ -1,0 +1,1181 @@
+/* INICIO CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
+*:focus{
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* Header */
+
+.header{
+    background-color: #B3DAF6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 80px;
+}
+
+/* Body */
+
+
+.background-pages {
+    background-image: url(../img/web1920bg.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 100px;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+.header ul{
+    margin-bottom: 32px;
+    margin-left: 28px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+
+}
+
+.header li{
+    margin-bottom: 16px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    
+    
+}
+
+.header a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header a:hover{
+    color: rgb(42, 141, 255);
+}
+
+.header #Logo-Header{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+/* Section */
+
+#details{
+    display: block;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 2%;
+    position: fixed;
+    left: 18%;
+}
+
+#details button{
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid;
+    border-color: white;
+    background-color: transparent;
+    margin-top: 15px;
+
+    
+}
+
+#details button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#details button:hover{
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid;
+    border-color: rgb(42, 141, 255);
+    background-color: rgb(42, 141, 255);
+    cursor: pointer;
+}
+
+.intro {
+    font-family: 'houschka-rounded',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin-bottom: -20px;
+}
+
+.intro-text{
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    color: #fff;
+    padding: 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 60px;
+}
+
+.container-foot img {
+    height: 20px;
+    margin-bottom: -15px;
+}
+
+.container-foot ul{
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline;
+    flex-direction: column;
+    align-items: left;
+    float: left;
+}
+
+.container-foot li{
+    padding: 0 15px;
+    margin-bottom: 16px;
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.container-foot a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.caja2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 70px;
+}
+
+legend{
+    padding-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #e6e6e6;
+	color: #e6e6e6;
+	font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	
+}
+
+::-webkit-input-placeholder{
+    color:#ffffff;
+    }
+    :-moz-placeholder{ /* Firefox 18- */
+    color:#ffffff;
+    }
+    ::-moz-placeholder{ /* Firefox 19+ */
+    color:#ffffff;
+    }
+    :-ms-input-placeholder{
+    color:#ffffff;
+    }
+
+#submit-button-news {
+    display: none;
+  }
+
+
+
+/* LANDING INDEX CSS */
+
+
+
+.index-body{
+    background-color: #1d1d1d !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 25px;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+
+
+.landing-title{    
+    font-family: montserrat, sans-serif;
+    background-image: var(--gradient);
+    background-image: linear-gradient(to bottom, #363636 0%, white 50%, #363636 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 15pt;
+    text-align: center;
+    
+}
+
+.flex-index{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+
+
+.landing-logo{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: landing-logo;
+    margin-right: 20px;
+    
+}
+
+
+
+.landing-title{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 17px;
+    margin-right: 20px;
+    
+}
+
+.ball-cover{
+    height: 18px;
+    width: 18px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    z-index: 999;
+    background-color: #1d1d1d;
+}
+
+.anim-index{
+    width: 100%;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    position: absolute;
+    top: 62%;
+    left: 0.65%;
+}
+
+
+/* ANIMACIÓN */
+
+
+
+.ball{
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+
+
+    
+
+    @keyframes ball {
+    
+        0% {
+            opacity: 0%;
+            scale: 10%;
+            left: 50%;
+            top: 0%;
+            color: white;
+        }
+
+    
+        95% {
+            opacity: 100%;
+            color: white;
+        }
+
+        100% {
+            top: 56%;
+            left: 50%;
+            opacity: 0%;
+            color: white;
+        }
+
+    
+}
+
+.loader{
+    background-color: transparent;
+    height: 25px;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;     
+    z-index: 99;
+    background-color: #1d1d1d;
+    border-radius: 500px;
+    border: solid 0px white;
+    animation-name: loader;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+.loader .loader-color {
+    background-color: white;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+    height: 73%;
+    border-radius: 500px;
+    z-index: 999 !important;
+    animation-name: loader-anim;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    
+}
+
+@keyframes loader-anim {
+    0%{
+        width: 0%;
+        opacity: 50%;
+    }
+
+    25%{
+        width: 3%;
+        opacity: 75%;
+    }
+
+    50%{
+        width: 5%;
+        opacity: 75%;
+    }
+
+    75%{
+        width: 10%;
+        opacity: 100%;
+    }
+
+    80%{
+        width: 15%;
+        opacity: 100%;
+    }
+    100%{
+        width: 20%;
+        opacity: 0%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+/* NOSOTROS CSS */
+
+/* Section */
+.info-nosotros{
+    position: fixed;
+    left: 100px;
+}
+
+.about-section{
+    background: url(../img/about-us.jpg) no-repeat left;
+    background-size: 45%;
+    
+    overflow: hidden;
+    padding: 100px 0px ;
+    padding-right: 0%;
+    position: absolute;
+    left: 150px;
+    top: -30px;
+}
+
+.info-nosotros{
+    background-color: #913434;
+    width: 1000px;
+    transform: scale(1);
+}
+
+
+.inner-container{
+    width: 35%;
+    float: right;
+    margin-right: -100px;
+    background-color: #fdfdfd;
+    padding: 30px;
+    padding-right: 500px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: montserrat, sans-serif;
+
+}
+
+.team-circle1{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 150px;
+    right: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat, sans-serif;
+    font-size: 200px;
+}
+ .team-circle1 img{
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 130px;
+ }
+
+ .team-text{
+    font-family: montserrat, sans-serif;
+    font-size: 10pt;
+    position: fixed;
+    left: 655px;
+    top: 370px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .team-text h3{
+    position: absolute;
+    top: auto;
+ }
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: montserrat, sans-serif;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: montserrat, sans-serif;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+  /* CALENDARIO CSS */
+  
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
+
+
+/* Section */
+
+
+
+table{
+	background: rgb(255, 255, 255);
+	position: fixed;
+	top: 15%;
+	left: 13%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    
+}
+
+table,th,tr {
+	text-align: center;
+	vertical-align: middle;
+}
+
+table thead th{
+	
+	width: 3em;
+	height: 2em;
+	font-weight: 900;
+  font-family: montserrat, sans-serif;
+  font-size: medium;
+}
+
+table tbody td{
+	
+	height: 2.9em;
+    
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+td{
+    font-size: 14px;
+    padding: 7.71px;
+    margin: 20px;
+    
+}
+
+tbody a{
+	display: block;
+	height: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(0, 0, 0);
+  
+}
+
+
+#mes-prin:hover{
+	background: rgb(70, 70, 70);
+	color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.null{
+	color: gray;
+    font-family: montserrat, sans-serif;
+}
+
+.selected{
+	background: rgb(70, 70, 70);
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+.text{
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+.calendar-tittle{
+    padding: 10px;
+    color: rgb(70, 70, 70);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.event-1:hover{
+    background: rgb(99, 190, 103) !important;
+}
+
+.event-2:hover{
+    background: rgb(219, 96, 96) !important;
+}
+
+.event-3:hover{
+    background: rgb(230, 174, 91) !important;
+}
+
+
+.references{
+    background: rgb(255, 255, 255);
+	position: fixed;
+	top: 15%;
+	left: 44%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    
+}
+
+.references-text{
+    font-family: montserrat, sans-serif;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.charla{
+    position: fixed;
+    top: 22%;
+    left: 49.5%;
+}
+
+.capacitacion{
+    position: fixed;
+    top: 29%;
+    left: 49.5%;
+    
+}
+
+.cotizacion{
+    position: fixed;
+    top: 36%;
+    left: 49.5%;
+}
+
+.ref-forma1{
+    background: rgb(99, 190, 103);
+    border-radius: 50%;
+    position: fixed;
+    top: 21.8%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.ref-forma2{
+    background: rgb(219, 96, 96);
+    border-radius: 50%;
+    position: fixed;
+    top: 28.7%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.ref-forma3{
+    background: rgb(230, 174, 91);
+    border-radius: 50%;
+    position: fixed;
+    top: 35.7%;
+    left: 47%;
+    width: 22px;
+    height: 22px;
+    z-index: 100;
+}
+
+.prox-event{
+    background: rgb(255, 255, 255);
+	position: fixed;
+	top: 48.8%;
+	left: 44%;
+	font-size: 20px;
+	border-collapse: collapse;
+    height: 182px;
+    width: 250px;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    
+}
+
+.first-event{
+    position: fixed;
+    top: 55%;
+    left: 46.5%;
+    font-size: 11pt;
+    font-family: montserrat, sans-serif;
+}
+
+.first-event p{
+    font-size: 10pt !important;
+    margin-top: 2px;
+}
+
+.second-event{
+    position: fixed;
+    top: 65%;
+    left: 46.5%;
+    font-size: 11pt;
+    font-family: montserrat, sans-serif;
+}
+
+.second-event p{
+    font-size: 10pt !important;
+    margin-top: 2px;
+}
+
+
+  /* RESERVAS CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+/* Body*/
+.card-container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.card-container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 13px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.card-container .card:hover{
+    
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card-container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.card-container .card h4{
+    font-weight: 600;
+    margin-top: 15px;
+    font-family: montserrat, sans-serif;
+    font-size: 14pt;
+}
+
+.card-container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+    font-family: montserrat, sans-serif;
+    font-size: 11pt;
+}
+
+.card-container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 70px;
+    font-family: montserrat, sans-serif;
+    font-size: small;
+}
+
+
+/* CONTACTO CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
+
+@media screen and (min-width: 1024px){
+.container {
+    display: none;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.cross{
+    display: none;
+}
+
+#Logo-Header-Mobile {
+    display: none;
+}
+
+}
+
+
+/* Form */
+
+fieldset{
+    border: none;
+    position: fixed;
+    top: 17%;
+    left: 35%;
+    width: 200px;
+    height: 250px;
+    font-size: 20pt !important;
+    
+}
+
+.fieldset-contact{
+	background-color: rgb(255, 255, 255);
+  border: none;
+	
+	color: #e6e6e6;
+	font-size: 10pt;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1em 0;
+	padding: 1.5em 2em 4em 2em;
+  text-transform: uppercase;
+	width: 300px;
+    border-radius: 5%;
+	
+}
+
+
+
+.form-input-control {
+    color:rgb(37, 37, 37);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 2px;
+    line-height: 12px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    font-size: 10pt !important;
+    padding: 13px;
+    margin-bottom: 10px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .form-input-control:focus { border:2px solid #CC4949; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100px;
+    background:#CC6666;
+    border-radius:5%;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:-4px;
+    font-weight:700;
+    position: fixed;
+    
+  }
+
+  [type="submit"]:hover { background:#CC4949; }
+
+  
+  .form-input-control::-webkit-input-placeholder{
+    color:rgb(70, 70, 70);
+    }
+
+#contact-data{
+    border: none;
+    border-bottom: solid 2px rgb(70, 70, 70);
+    background: none;
+}
+  
+
+  @media screen and (max-width: 767px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-pages{
+        background-image: url(/PROYECTO/img/SmartPhone-Media-BG.jpg);
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    header{
+        background-color: #82B6FA;
+        width: 100%;
+    }
+
+    .header #Logo-Header-Mobile{
+        display: flex;
+        position: fixed;
+        top: 2%;
+        right: 5%;
+        
+    }
+
+    .header #Logo-Header{
+        display: none;
+    }
+
+     /*Menù lateral*/
+    #btn-menu{
+        display: none;
+        float: left;
+        margin-right: 75%;
+        cursor: pointer;
+        color: white;
+    
+    }
+
+    .btn-menu label{
+        display: block;
+        cursor: pointer;
+        color: white;
+        position: fixed;
+        top: 3%;
+        left: 5%;
+    }
+    .container-menu{
+        position: absolute;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999 !important;
+    }
+
+    #btn-menu:checked ~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .cont-menu{
+        width: 100%;
+        max-width: 250px;
+        background: #ffffff;
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    #btn-menu:checked ~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+
+    .cont-menu nav{
+        transform: translateY(15%);
+        
+    }
+
+    .cont-menu nav a{
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: rgb(36, 36, 36);
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+
+    .cont-menu nav a:hover{
+        border-left: 5px solid #c7c7c7;
+        background: #1f1f1f;
+        color: white;
+    }
+
+    .cont-menu label{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgb(36, 36, 36);
+        cursor: pointer;
+        font-size: 25px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+
+        /* Form */
+
+    fieldset{
+        border: none;
+        position: fixed;
+        top: 15%;
+        left: 8.5%;
+        width: 10px;
+        height: 250px;
+        font-size: 15pt !important;
+        
+    }
+
+    .fieldset-contact{
+        background-color: rgb(255, 255, 255);
+    border: none;
+        
+        color: #e6e6e6;
+        font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+        margin: 0em 0 1em 0;
+        padding: 1.5em 2em 4em 2em;
+    text-transform: uppercase;
+        width: 235px;
+        border-radius: 5%;
+        
+    }
+
+
+
+    .form-input-control {
+        color:rgb(37, 37, 37);
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight:500;
+        font-size: 18px;
+        border-radius: 2px;
+        line-height: 12px;
+        background-color: transparent;
+        border:2px solid #CC6666;
+        font-size: 8pt !important;
+        padding: 13px;
+        margin-bottom: 10px;
+        width:100%;
+        box-sizing: border-box;
+        outline:0;
+    }
+    
+    .form-input-control:focus { border:2px solid #CC4949; }
+    
+    textarea {
+        height: 150px;
+        line-height: 150%;
+        resize:vertical;
+    }
+    
+    [type="submit"] {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100px;
+        background:#CC6666;
+        border-radius:5%;
+        border:0;
+        cursor:pointer;
+        color:white;
+        font-size:15px;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:-4px;
+        font-weight:700;
+        position: fixed;
+        
+    }
+
+    [type="submit"]:hover { background:#CC4949; }
+
+    
+    .form-input-control::-webkit-input-placeholder{
+        color:rgb(70, 70, 70);
+        }
+
+    #contact-data{
+        border: none;
+        border-bottom: solid 2px rgb(70, 70, 70);
+        background: none;
+        }
+
+  }
