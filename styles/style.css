@@ -280,7 +280,7 @@ input[type='text'], [type='email'], select, textarea {
     justify-content: center;
     align-items: center;
     animation-name: landing-logo;
-    margin-right: 20px;
+    margin-right: 27px;
     
 }
 
@@ -298,8 +298,8 @@ input[type='text'], [type='email'], select, textarea {
 }
 
 .ball-cover{
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 24px;
     position: fixed;
     top: 0%;
     left: 50%;
@@ -1011,6 +1011,10 @@ fieldset{
         display: none;
     }
 
+    .navbar .navbar-expand-lg{
+        background-color: transparent;
+    }
+
      /*Menù lateral*/
     #btn-menu{
         display: none;
@@ -1141,6 +1145,31 @@ fieldset{
     }
     
     .form-input-control:focus { border:2px solid #CC4949; }
+
+    .box {
+        width: 100%;
+    }
+
+    footer{
+        position: fixed;
+        top: 88%;
+        margin-top: 10px;
+        
+    }
+
+    .caja2{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-right: 70px;
+        width: 100%;
+    }
+    
+    legend{
+        padding-bottom: 8px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
     
     textarea {
         height: 150px;
@@ -1178,4 +1207,126 @@ fieldset{
         background: none;
         }
 
+    .index-body{
+        background-color: #1d1d1d !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 25px;
+        height: 100%;
+        overflow-x:hidden;
+        }
+    
+        .loader{
+            background-color: transparent;
+            height: 25px;
+            position: fixed;
+            top: 50%;
+            left: 12%;     
+            width: 80%;
+            z-index: 99;
+            background-color: #1d1d1d;
+            border-radius: 500px;
+            border: solid 0px white;
+            animation-name: loader;
+            animation-delay: 3s;
+            animation-duration: 15s;
+        }
+
+    .ball{
+        background-color: white;
+        height: 18px;
+        width: 18px;
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        border-radius: 50%;
+        animation-name: ball;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        }
+    
+        @keyframes ball {
+    
+            0% {
+                opacity: 0%;
+                scale: 10%;
+                left: 50%;
+                top: 0%;
+                color: white;
+            }
+    
+        
+            95% {
+                opacity: 100%;
+                color: white;
+            }
+    
+            100% {
+                top: 46%;
+                left: 50%;
+                opacity: 0%;
+                color: white;
+            }
+    
+        
+    }
+
+    @keyframes loader-anim {
+        0%{
+            width: 0%;
+            opacity: 50%;
+        }
+    
+        25%{
+            width: 8%;
+            opacity: 75%;
+        }
+    
+        50%{
+            width: 15%;
+            opacity: 75%;
+        }
+    
+        75%{
+            width: 20%;
+            opacity: 100%;
+        }
+    
+        80%{
+            width: 25%;
+            opacity: 100%;
+        }
+        100%{
+            width: 30%;
+            opacity: 0%;
+        }
+    }
+    
+    @keyframes loader {
+        0% {
+            opacity: 100%;
+        }
+        
+        100% {
+            opacity: 0%;
+        }
+    }
+   
+    #details {
+        position: fixed;
+        top: 35%;
+        left: 3%;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    
   }
