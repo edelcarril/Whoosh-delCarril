@@ -1,0 +1,465 @@
+/* CONTACTO CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
+
+@media screen and (min-width: 1024px){
+.container {
+    display: none;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.cross{
+    display: none;
+}
+
+#Logo-Header-Mobile {
+    display: none;
+}
+
+}
+
+
+/* Form */
+
+fieldset{
+    border: none;
+    position: fixed;
+    top: 17%;
+    left: 35%;
+    width: 200px;
+    height: 250px;
+    font-size: 20pt !important;
+    
+}
+
+.fieldset-contact{
+	background-color: rgb(255, 255, 255);
+  border: none;
+	
+	color: #e6e6e6;
+	font-size: 10pt;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1em 0;
+	padding: 1.5em 2em 4em 2em;
+  text-transform: uppercase;
+	width: 300px;
+    border-radius: 5%;
+	
+}
+
+
+
+.form-input-control {
+    color:rgb(37, 37, 37);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 2px;
+    line-height: 12px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    font-size: 10pt !important;
+    padding: 13px;
+    margin-bottom: 10px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .form-input-control:focus { border:2px solid #CC4949; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100px;
+    background:#CC6666;
+    border-radius:5%;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:-4px;
+    font-weight:700;
+    position: fixed;
+    
+  }
+
+  [type="submit"]:hover { background:#CC4949; }
+
+  
+  .form-input-control::-webkit-input-placeholder{
+    color:rgb(70, 70, 70);
+    }
+
+#contact-data{
+    border: none;
+    border-bottom: solid 2px rgb(70, 70, 70);
+    background: none;
+}
+  
+
+  @media screen and (max-width: 767px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-pages{
+        background-image: url(/PROYECTO/img/SmartPhone-Media-BG.jpg);
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    header{
+        background-color: #82B6FA;
+        width: 100%;
+    }
+
+    .header #Logo-Header-Mobile{
+        display: flex;
+        position: fixed;
+        top: 2%;
+        right: 5%;
+        
+    }
+
+    .header #Logo-Header{
+        display: none;
+    }
+
+    .navbar .navbar-expand-lg{
+        background-color: transparent;
+    }
+
+     /*Menù lateral*/
+    #btn-menu{
+        display: none;
+        float: left;
+        margin-right: 75%;
+        cursor: pointer;
+        color: white;
+    
+    }
+
+    .btn-menu label{
+        display: block;
+        cursor: pointer;
+        color: white;
+        position: fixed;
+        top: 3%;
+        left: 5%;
+    }
+    .container-menu{
+        position: absolute;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999 !important;
+    }
+
+    #btn-menu:checked ~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .cont-menu{
+        width: 100%;
+        max-width: 250px;
+        background: #ffffff;
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    #btn-menu:checked ~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+
+    .cont-menu nav{
+        transform: translateY(15%);
+        
+    }
+
+    .cont-menu nav a{
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: rgb(36, 36, 36);
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+
+    .cont-menu nav a:hover{
+        border-left: 5px solid #c7c7c7;
+        background: #1f1f1f;
+        color: white;
+    }
+
+    .cont-menu label{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgb(36, 36, 36);
+        cursor: pointer;
+        font-size: 25px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+
+        /* Form */
+
+    fieldset{
+        border: none;
+        position: fixed;
+        top: 15%;
+        left: 8.5%;
+        width: 10px;
+        height: 250px;
+        font-size: 15pt !important;
+        
+    }
+
+    .fieldset-contact{
+        background-color: rgb(255, 255, 255);
+    border: none;
+        
+        color: #e6e6e6;
+        font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+        margin: 0em 0 1em 0;
+        padding: 1.5em 2em 4em 2em;
+    text-transform: uppercase;
+        width: 235px;
+        border-radius: 5%;
+        
+    }
+
+
+
+    .form-input-control {
+        color:rgb(37, 37, 37);
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight:500;
+        font-size: 18px;
+        border-radius: 2px;
+        line-height: 12px;
+        background-color: transparent;
+        border:2px solid #CC6666;
+        font-size: 8pt !important;
+        padding: 13px;
+        margin-bottom: 10px;
+        width:100%;
+        box-sizing: border-box;
+        outline:0;
+    }
+    
+    .form-input-control:focus { border:2px solid #CC4949; }
+
+    .box {
+        width: 100%;
+    }
+
+    footer{
+        position: fixed;
+        top: 88%;
+        margin-top: 10px;
+        
+    }
+
+    .caja2{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-right: 70px;
+        width: 100%;
+    }
+    
+    legend{
+        padding-bottom: 8px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    
+    textarea {
+        height: 150px;
+        line-height: 150%;
+        resize:vertical;
+    }
+    
+    [type="submit"] {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100px;
+        background:#CC6666;
+        border-radius:5%;
+        border:0;
+        cursor:pointer;
+        color:white;
+        font-size:15px;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:-4px;
+        font-weight:700;
+        position: fixed;
+        
+    }
+
+    [type="submit"]:hover { background:#CC4949; }
+
+    
+    .form-input-control::-webkit-input-placeholder{
+        color:rgb(70, 70, 70);
+        }
+
+    #contact-data{
+        border: none;
+        border-bottom: solid 2px rgb(70, 70, 70);
+        background: none;
+        }
+
+    .index-body{
+        background-color: #1d1d1d !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 25px;
+        height: 100%;
+        overflow-x:hidden;
+        }
+    
+        .loader{
+            background-color: transparent;
+            height: 25px;
+            position: fixed;
+            top: 50%;
+            left: 12%;     
+            width: 80%;
+            z-index: 99;
+            background-color: #1d1d1d;
+            border-radius: 500px;
+            border: solid 0px white;
+            animation-name: loader;
+            animation-delay: 3s;
+            animation-duration: 15s;
+        }
+
+    .ball{
+        background-color: white;
+        height: 18px;
+        width: 18px;
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        border-radius: 50%;
+        animation-name: ball;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        }
+    
+        @keyframes ball {
+    
+            0% {
+                opacity: 0%;
+                scale: 10%;
+                left: 50%;
+                top: 0%;
+                color: white;
+            }
+    
+        
+            95% {
+                opacity: 100%;
+                color: white;
+            }
+    
+            100% {
+                top: 46%;
+                left: 50%;
+                opacity: 0%;
+                color: white;
+            }
+    
+        
+    }
+
+    @keyframes loader-anim {
+        0%{
+            width: 0%;
+            opacity: 50%;
+        }
+    
+        25%{
+            width: 8%;
+            opacity: 75%;
+        }
+    
+        50%{
+            width: 15%;
+            opacity: 75%;
+        }
+    
+        75%{
+            width: 20%;
+            opacity: 100%;
+        }
+    
+        80%{
+            width: 25%;
+            opacity: 100%;
+        }
+        100%{
+            width: 30%;
+            opacity: 0%;
+        }
+    }
+    
+    @keyframes loader {
+        0% {
+            opacity: 100%;
+        }
+        
+        100% {
+            opacity: 0%;
+        }
+    }
+   
+    #details {
+        position: fixed;
+        top: 35%;
+        left: 3%;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    
+  }

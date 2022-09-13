@@ -1,0 +1,91 @@
+/* Footer */
+footer{
+    color: #fff;
+    padding: 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 60px;
+
+    .list img {
+        height: 20px;
+        margin-bottom: -15px;
+    }
+    
+    .list ul{
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: inline;
+        flex-direction: column;
+        align-items: left;
+        float: left;
+    }
+    
+    .list li{
+        padding: 0 15px;
+        margin-bottom: 16px;
+        list-style-type: none;
+        display: inline;
+        
+    }
+    
+    .list a{
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        
+    }
+    
+    .caja2{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-right: 70px;
+    }
+    
+    legend{
+        padding-bottom: 8px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    input[type='text'], [type='email'], select, textarea {
+        background: none;
+      border: none;
+        border-bottom: solid 2px #e6e6e6;
+        color: #e6e6e6;
+        font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 1px;
+        margin: 0em 0 1em 0;
+        padding: 0 0 0.875em 0;
+      text-transform: uppercase;
+        width: 100%;
+        
+    }
+    
+    ::-webkit-input-placeholder{
+        color:#ffffff;
+        }
+        :-moz-placeholder{ /* Firefox 18- */
+        color:#ffffff;
+        }
+        ::-moz-placeholder{ /* Firefox 19+ */
+        color:#ffffff;
+        }
+        :-ms-input-placeholder{
+        color:#ffffff;
+        }
+    
+    #submit-button-news {
+        display: none;
+      }
+
+}
