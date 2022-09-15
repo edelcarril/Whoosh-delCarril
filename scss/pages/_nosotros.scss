@@ -1,0 +1,123 @@
+/* NOSOTROS CSS */
+
+/* Section */
+.info-nosotros{
+    position: fixed;
+    left: 100px;
+}
+
+.about-section{
+    background: url(../img/about-us.jpg) no-repeat left;
+    background-size: 45%;
+    
+    overflow: hidden;
+    padding: 100px 0px ;
+    padding-right: 0%;
+    position: absolute;
+    left: 150px;
+    top: -30px;
+}
+
+.info-nosotros{
+    background-color: #913434;
+    width: 1000px;
+    transform: scale(1);
+}
+
+
+.inner-container{
+    width: 35%;
+    float: right;
+    margin-right: -100px;
+    background-color: #fdfdfd;
+    padding: 30px;
+    padding-right: 500px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: montserrat, sans-serif;
+
+}
+
+.team-circle1{
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 150px;
+    right: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat, sans-serif;
+    font-size: 200px;
+}
+ .team-circle1 img{
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 130px;
+ }
+
+ .team-text{
+    font-family: montserrat, sans-serif;
+    font-size: 10pt;
+    position: fixed;
+    left: 655px;
+    top: 370px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .team-text h3{
+    position: absolute;
+    top: auto;
+ }
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: montserrat, sans-serif;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: montserrat, sans-serif;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}

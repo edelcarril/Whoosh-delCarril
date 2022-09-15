@@ -1,0 +1,53 @@
+/* Header */
+
+header{
+    background-color: #B3DAF6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 80px;
+
+    ul{
+        margin-bottom: 32px;
+        margin-left: 28px;
+        margin-top: 28px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+    
+    }
+    
+    li{
+        margin-bottom: 16px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        
+        
+    }
+    
+    a{
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-family: montserrat, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        &:hover{
+            color: rgb(42, 141, 255);
+        }
+    }
+    
+    
+    #Logo-Header{
+        position: fixed;
+        top: 3%;
+        right: 3%;
+    }
+}
