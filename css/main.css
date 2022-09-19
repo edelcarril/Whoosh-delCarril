@@ -704,7 +704,15 @@ textarea {
   color: transparent;
   font-weight: 600;
   font-size: 15pt;
-  text-align: center; }
+  text-align: center;
+  animation-name: landing-title;
+  animation-delay: 5s; }
+
+@keyframes landing-title {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 
 .flex-index {
   grid-column: 2 / 2;
@@ -725,7 +733,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 17px;
+  margin-top: 15px;
   margin-right: 20px; }
 
 .ball-cover {
