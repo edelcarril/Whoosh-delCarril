@@ -38,8 +38,9 @@
     cursor: pointer;
 }
 
+
 .intro {
-    font-family: 'houschka-rounded',sans-serif;
+    @extend #details button a ;
     font-weight: 600;
     font-style: normal;
     color: #fff;

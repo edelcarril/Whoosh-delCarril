@@ -990,10 +990,13 @@ textarea {
     font-size: small; }
 
 .background-pages {
-  background-image: url(../img/web1920bg.jpg);
+  
   background-size: 100%;
   width: 100%;
   height: 90%;
   margin-bottom: 100px;
   max-height: 100%;
   overflow-x: hidden; }
+
+
+  

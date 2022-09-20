@@ -1,5 +1,5 @@
 .background-pages {
-    background-image: url(../img/web1920bg.jpg);
+    @include bg;
     background-size: 100%;
     width: 100%;
     height: 90%;
