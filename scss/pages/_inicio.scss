@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://use.typekit.net/hsc2ppo.css");
+
 /* Section */
 
 #details{
@@ -20,7 +23,7 @@
     
 }
 
-#details button a{
+#details .button-inicio a{
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -38,14 +41,16 @@
     cursor: pointer;
 }
 
+
 .intro {
-    font-family: 'houschka-rounded',sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #fff;
     letter-spacing: 4px;
     font-size: 35px;
     margin-bottom: -20px;
+    @extend .button-inicio;
 }
 
 .intro-text{

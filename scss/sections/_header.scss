@@ -1,7 +1,12 @@
 /* Header */
 
+
 header{
-    background-color: #B3DAF6;
+    $map: (
+    "desktop-header": #B3DAF6,
+    );
+
+    background-color: map-get($map, desktop-header);
     width: 100%;
     display: grid;
     grid-template-columns: 45% 55%;
@@ -51,3 +56,5 @@ header{
         right: 3%;
     }
 }
+
+
