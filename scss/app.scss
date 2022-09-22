@@ -18,24 +18,3 @@
 
 @import './background/bg';
 
-$desktop-header: #B3DAF6;
-$mobile-header: #82B6FA;
-
-$header-color: map-merge(
-    (
-      “desktop”: $header-desktop,
-      “mobile”: $header-mobile,
-      
-    ),
-    $header-color
-);
-
-@each $name, $value in $header-color {
-    .header-#{$name} {
-      background-color: $value;
-    }
-  }
-
-  @mixin bg {
-    background-image: url(../img/web1920bg.jpg); 
-  }

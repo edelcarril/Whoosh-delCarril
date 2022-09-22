@@ -7,6 +7,8 @@
 @import url("https://use.typekit.net/hsc2ppo.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://use.typekit.net/hsc2ppo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://use.typekit.net/hsc2ppo.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 *:focus {
   outline: none; }
@@ -400,75 +402,8 @@ textarea {
   header {
     background-color: #82B6FA;
     width: 100%; }
-  .header #Logo-Header-Mobile {
-    display: flex;
-    position: fixed;
-    top: 2%;
-    right: 5%; }
-  .header #Logo-Header {
-    display: none; }
-  .navbar .navbar-expand-lg {
-    background-color: transparent; }
-  /*Menù lateral*/
-  #btn-menu {
-    display: none;
-    float: left;
-    margin-right: 75%;
-    cursor: pointer;
-    color: white; }
-  .btn-menu label {
-    display: block;
-    cursor: pointer;
-    color: white;
-    position: fixed;
-    top: 3%;
-    left: 5%; }
-  .container-menu {
-    position: absolute;
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 999 !important; }
-  #btn-menu:checked ~ .container-menu {
-    opacity: 1;
-    visibility: visible; }
-  .cont-menu {
-    width: 100%;
-    max-width: 250px;
-    background: #ffffff;
-    height: 100vh;
-    position: relative;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
-    font-family: 'Work Sans', sans-serif; }
-  #btn-menu:checked ~ .container-menu .cont-menu {
-    transform: translateX(0%); }
-  .cont-menu nav {
-    transform: translateY(15%); }
-  .cont-menu nav a {
-    display: block;
-    text-decoration: none;
-    padding: 20px;
-    color: #242424;
-    border-left: 5px solid transparent;
-    transition: all 400ms ease; }
-  .cont-menu nav a:hover {
-    border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
-    color: white; }
-  .cont-menu label {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: #242424;
-    cursor: pointer;
-    font-size: 25px;
-    font-family: 'Work Sans', sans-serif; }
+  
+  
   /* Form */
   fieldset {
     border: none;
@@ -627,7 +562,7 @@ textarea {
     100% {
       opacity: 0%; } }
   #details {
-    position: fixed;
+    position: relative;
     top: 35%;
     left: 3%;
     margin-left: 0;
@@ -641,7 +576,7 @@ textarea {
   text-align: center;
   margin-left: 25%;
   margin-top: 2%;
-  position: fixed;
+  position: relative;
   left: 18%; }
 
 #details button {
@@ -652,7 +587,7 @@ textarea {
   background-color: transparent;
   margin-top: 15px; }
 
-#details button a {
+#details .button-inicio a, #details .intro a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -669,7 +604,7 @@ textarea {
   cursor: pointer; }
 
 .intro {
-  font-family: 'houschka-rounded',sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 600;
   font-style: normal;
   color: #fff;
@@ -990,7 +925,7 @@ textarea {
     font-size: small; }
 
 .background-pages {
-  
+  background-image: url(../img/web1920bg.jpg);
   background-size: 100%;
   width: 100%;
   height: 90%;
@@ -999,4 +934,214 @@ textarea {
   overflow-x: hidden; }
 
 
-  
+
+
+  /* MEDIA QUERIES */
+
+  @media all and (max-width: 480px) { 
+    
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .header img{
+      display: none;
+    }
+
+    .background-pages{
+        background-image: url(../img/SmartPhone-Media-BG.jpg);
+        width: 100%;
+        height: 1108px;
+      };
+
+
+    body{
+      height: 100%;
+    }
+
+  /* INICIO */
+    section{
+      width: 100%;
+      height: 50%;
+      position: fixed;
+      top: 25%;
+    }
+
+    #details{
+      position: relative;
+      left: -25%;
+      top: 10%;
+    }
+
+    #details button:hover {
+      border-radius: 30px;
+      padding: 10px;
+      border: 2px solid;
+      border-color: #2a8dff;
+      background-color: #2a8dff;
+      cursor: pointer; }
+
+
+  /* HEADER */
+
+  header{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  header li{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+  }
+
+  header a{
+    font-size: 10pt !important;
+  }
+
+  /* FOOTER */
+
+  footer{
+    background-color: #68a337;
+    height: 100%;
+  }
+
+
+  .caja1{
+    width: 80%;
+  }
+
+  .caja2{
+    width: 50%;
+    position: fixed;
+    left: 60%;
+  }
+
+  #news-email{
+    width: 70%;
+  }
+
+  .info-nosotros{
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .about-section{
+    width: 400px;
+    position: fixed;
+    left: -25%;
+  }
+
+  .inner-container .text{
+    width: 80%;
+  }
+
+  .skills{
+    width: 80%;
+  }
+
+  .team-circle1{
+    top: 62%;
+    left: 15%;
+  }
+
+  .team-circle1 img{
+    position: fixed;
+    top: 62%;
+    left: 15%;
+  }
+
+
+  /* CALENDARIO */
+
+  .references-section{
+    position: fixed;
+    top: 65%;
+  }
+
+  .references{
+    width: 40%;
+    position: fixed;
+    top: 52.2%;
+    left: 13%;
+  }
+
+  .references .charla{
+    position: fixed;
+    top: 53%;
+    left: 20%;
+  }
+
+  .references .capacitacion{
+    position: fixed;
+    top: 58%;
+    left: 20%;
+  }
+
+  .references .cotizacion{
+    position: fixed;
+    top: 63%;
+    left: 20%;
+  }
+
+  .ref-forma1{
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    top: 53.3%;
+    left: 15%;
+  }
+
+  .ref-forma2{
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    top: 58.3%;
+    left: 15%;
+  }
+
+  .ref-forma3{
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    top: 63.3%;
+    left: 15%;
+  }
+
+  .prox-event{
+    width: 40%;
+    height: 18%;
+    position: fixed;
+    left: 55%;
+    top: 52.2%;
+  }
+
+  .first-event{
+    position: fixed;
+    left: 56%;
+  }
+
+  .second-event{
+    position: fixed;
+    left: 56%;
+  }
+
+  /* RESERVAS */
+
+  .card{
+    height: 200px;
+    width: 200px;
+  }
+
+  /* CONTACTO */
+  .fieldset-contact {
+    position: fixed;
+    left: 20%;
+  }
+
+  /* LANDING */
+}

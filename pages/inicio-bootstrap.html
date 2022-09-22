@@ -92,3 +92,20 @@
 
   </body>
 </html>
+
+
+
+$header-color: map-merge(
+    (
+      “desktop”: $header-desktop,
+      “mobile”: $header-mobile,
+      
+    ),
+    $header-color
+);
+
+@each $name, $value in $header-color {
+    .header-#{$name} {
+      background-color: $value;
+    }
+  }
