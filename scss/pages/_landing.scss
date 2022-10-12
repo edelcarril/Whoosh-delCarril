@@ -4,49 +4,25 @@
     padding: 0;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    grid-gap: 25px;
+    grid-template-columns: 30% 15% 10% 15% 30%;
+    grid-template-rows: 30% 15% 10% 15% 30%;
+    
     height: 100%;
     overflow-x:hidden;
 }
 
 
 
-.landing-title{    
-    font-family: montserrat, sans-serif;
-    background-image: var(--gradient);
-    background-image: linear-gradient(to bottom, #363636 0%, white 50%, #363636 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 600;
-    font-size: 15pt;
-    text-align: center;
-    animation-name: landing-title;
-    animation-delay: 5s;
-}
 
-@keyframes landing-title {
-    0%{
-        opacity: 0%;
-    }
-
-    100%{
-        opacity: 100%;
-    }
-}
 
 .flex-index{
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-area: cont3;
 }
 
 
 
 .landing-logo{
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-area: cont3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,157 +33,59 @@
 
 
 
-.landing-title{
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+.loader-touch {
+    grid-area: cont3;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
-    margin-top: 15px;
-    margin-right: 20px;
-    
-}
+    align-items: center;
+    align-content: space-around;
+    margin-left: 18%;
+    width: 80px;
+    height: 80px;
+    grid-row: 3;
+        div {
+            position: absolute;
+            border: 4px solid #fff;
+            opacity: 1;
+            border-radius: 50%;
+            animation: loader-touch 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+            
+                &:nth-child(2) {
+                    animation-delay: -0.5s;
+                }
 
-.ball-cover{
-    height: 20px;
-    width: 24px;
-    position: fixed;
-    top: 0%;
-    left: 50%;
-    z-index: 999;
-    background-color: #1d1d1d;
-}
-
-.anim-index{
-    width: 100%;
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    position: absolute;
-    top: 62%;
-    left: 0.65%;
-}
-
-
-/* ANIMACIÓN */
-
-
-
-.ball{
-    background-color: white;
-    height: 18px;
-    width: 18px;
-    position: fixed;
-    top: 0%;
-    left: 50%;
-    border-radius: 50%;
-    animation-name: ball;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-play-state: running;
 }
 
 
 
-    
-
-    @keyframes ball {
-    
-        0% {
-            opacity: 0%;
-            scale: 10%;
-            left: 50%;
-            top: 0%;
-            color: white;
-        }
-
-    
-        95% {
-            opacity: 100%;
-            color: white;
-        }
-
-        100% {
-            top: 56%;
-            left: 50%;
-            opacity: 0%;
-            color: white;
-        }
-
-    
 }
-
-.loader{
-    background-color: transparent;
-    height: 25px;
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;     
-    z-index: 99;
-    background-color: #1d1d1d;
-    border-radius: 500px;
-    border: solid 0px white;
-    animation-name: loader;
-    animation-delay: 3s;
-    animation-duration: 15s;
-}
-
-.loader .loader-color {
-    background-color: white;
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;   
-    height: 73%;
-    border-radius: 500px;
-    z-index: 999 !important;
-    animation-name: loader-anim;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-delay: 1.2s;
-    
-}
-
-@keyframes loader-anim {
-    0%{
-        width: 0%;
-        opacity: 50%;
-    }
-
-    25%{
-        width: 3%;
-        opacity: 75%;
-    }
-
-    50%{
-        width: 5%;
-        opacity: 75%;
-    }
-
-    75%{
-        width: 10%;
-        opacity: 100%;
-    }
-
-    80%{
-        width: 15%;
-        opacity: 100%;
-    }
-    100%{
-        width: 20%;
-        opacity: 0%;
-    }
-}
-
-@keyframes loader {
+  
+  
+  @keyframes loader-touch {
     0% {
-        opacity: 100%;
+      
+      width: 0;
+      height: 0;
+      opacity: 0;
     }
-    
+    4.9% {
+      
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
     100% {
-        opacity: 0%;
+      
+      width: 72px;
+      height: 72px;
+      opacity: 0;
     }
-}
+  }
+  

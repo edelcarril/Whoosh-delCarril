@@ -17,13 +17,7 @@
 
 /* Header */
 
-.header{
-    background-color: #B3DAF6;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 55%;
-    grid-template-rows: 80px;
-}
+
 
 /* Body */
 

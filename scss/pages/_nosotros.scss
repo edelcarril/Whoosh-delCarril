@@ -1,123 +1,118 @@
-/* NOSOTROS CSS */
-
-/* Section */
-.info-nosotros{
-    position: fixed;
-    left: 100px;
-}
-
-.about-section{
-    background: url(../img/about-us.jpg) no-repeat left;
-    background-size: 45%;
-    
-    overflow: hidden;
-    padding: 100px 0px ;
-    padding-right: 0%;
-    position: absolute;
-    left: 150px;
-    top: -30px;
-}
-
-.info-nosotros{
-    background-color: #913434;
-    width: 1000px;
-    transform: scale(1);
-}
-
-
-.inner-container{
-    width: 35%;
-    float: right;
-    margin-right: -100px;
-    background-color: #fdfdfd;
-    padding: 30px;
-    padding-right: 500px;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 800;
-    font-family: montserrat, sans-serif;
-
-}
-
-.team-circle1{
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    position: fixed;
-    top: 150px;
-    right: 95px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: montserrat, sans-serif;
-    font-size: 200px;
-}
- .team-circle1 img{
-    height: 200px;
-    width: 200px;
-    position: fixed;
-    top: 130px;
- }
-
- .team-text{
-    font-family: montserrat, sans-serif;
-    font-size: 10pt;
-    position: fixed;
-    left: 655px;
-    top: 370px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- .team-text h3{
-    position: absolute;
-    top: auto;
- }
-
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-    font-family: montserrat, sans-serif;
-}
-
-.skills{
-    display: flex;
-    justify-content: space-between;
+#hero {
+    width: 80%;
+    height: 80vh;
+    background: #fff;
+  
+  
+  .container {
+    padding-top: 62px;
+    padding-left: 82px;
+  }
+  
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
     font-weight: 700;
-    font-size: 13px;
-    font-family: montserrat, sans-serif;
-}
+    line-height: 56px;
+    color: black;
+  }
+  
+  h2 {
+    color: black;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  
+  .btn-get-started {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #47b2e4;
+  }
+  
+  .btn-get-started:hover {
+    background: #209dd8;
+  }
+  
+  
+  .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
 
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
 }
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
+  
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+      text-align: center;
     }
-    .inner-container{
-        width: 100%;
+  
+    #hero .animated {
+      -webkit-animation: none;
+      animation: none;
     }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
+  
+    #hero .hero-img {
+      text-align: center;
     }
-    .inner-container{
-        padding: 60px;
+  
+    #hero .hero-img img {
+      width: 50%;
     }
-}
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #hero .hero-img img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+  
+    #hero .btn-get-started {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
